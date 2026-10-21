@@ -25,6 +25,34 @@ if (themeToggle) {
   });
 }
 
+// Animated background parallax
+const orbWraps = document.querySelectorAll(".orb-wrap");
+let scrollTicking = false;
+
+function updateBackground() {
+  const y = window.scrollY;
+
+  orbWraps.forEach((wrap, i) => {
+    const factor = (i + 1) * 0.08;
+    wrap.style.transform = `translate3d(0, ${(-y * factor).toFixed(1)}px, 0)`;
+  });
+
+  scrollTicking = false;
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!scrollTicking) {
+      requestAnimationFrame(updateBackground);
+      scrollTicking = true;
+    }
+  },
+  { passive: true }
+);
+
+updateBackground();
+
 const header = document.querySelector("header");
 
 function updateHeader() {
@@ -63,8 +91,17 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
+        const el = entry.target;
+
+        // Reveal siblings one at a time within the same container
+        const siblings = Array.from(el.parentElement.children).filter((child) =>
+          child.classList.contains("reveal")
+        );
+        const index = Math.max(siblings.indexOf(el), 0);
+        el.style.transitionDelay = `${index * 0.12}s`;
+
+        el.classList.add("visible");
+        observer.unobserve(el);
       }
     });
   },
