@@ -37,7 +37,12 @@
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
-        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="theme-toggle" aria-label="Switch to light mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+          </svg>
+        </button>
         <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </nav>
     </div>
@@ -55,11 +60,11 @@
           </p>
           <div class="btn-row">
             <a href="#work" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            <a href="https://drive.google.com/file/d/1DxvOzEPN8zWo_tGCKwQw6DGOZyhiXwHB/view?usp=sharing" class="btn btn-ghost" download>View Resume</a>
           </div>
         </div>
         <div class="avatar">
-          <img src="profile.png" alt="Portrait of Anthony Talaogon" />
+          <img src="assets/profile.png" alt="Portrait of Anthony Talaogon" />
         </div>
       </div>
     </section>
@@ -122,7 +127,7 @@
     <section id="about">
       <div class="container">
         <div class="about">
-          <div class="photo"></div>
+          <img class="photo" src="assets/profile.png" alt="Portrait of Anthony Talaogon" loading="lazy" />
           <div>
             <div class="eyebrow">About Me</div>
             <h2>Designer who codes, developer who cares.</h2>
