@@ -282,10 +282,17 @@ h1 {
 }
 
 h1 .grad {
+  display: inline-block;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  clip-path: inset(0 100% 0 0);
+  animation: typing-reveal 1.3s steps(13, end) 1.1s forwards;
+}
+
+@keyframes typing-reveal {
+  to { clip-path: inset(0); }
 }
 
 .hero p {
@@ -363,6 +370,15 @@ h1 .grad {
   object-fit: cover;
 }
 
+.hero .avatar img {
+  animation: avatar-image-reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+}
+
+@keyframes avatar-image-reveal {
+  from { transform: scale(1.14); }
+  to { transform: scale(1); }
+}
+
 /* Intro animation */
 .hero .eyebrow,
 .hero h1,
@@ -400,6 +416,15 @@ h1 .grad {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .hero .avatar img {
+    animation: none;
+  }
+
+  h1 .grad {
+    animation: none;
+    clip-path: none;
   }
 }
 
