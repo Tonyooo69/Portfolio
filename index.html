@@ -77,8 +77,9 @@
           <h2>Selected Work</h2>
           <p>A few projects I'm proud of.</p>
         </div>
-        <div class="grid">
+        <div class="grid work-grid">
           <article class="card">
+            <img class="project-thumbnail" src="assets/skycast-thumbnail.svg" alt="SkyCast weather dashboard preview" loading="lazy" decoding="async" />
             <div class="icon">🌦️</div>
             <h3>SkyCast</h3>
             <p>A weather dashboard with current conditions, location search, and a 5-day forecast.</p>
@@ -89,6 +90,7 @@
             </div>
           </article>
           <article class="card">
+            <img class="project-thumbnail" src="assets/message-thumbnail.svg" alt="Message form project preview" loading="lazy" decoding="async" />
             <div class="icon">💬</div>
             <h3>Send Me Random Messages!</h3>
             <p>A simple message form where visitors can send me a note.</p>
@@ -140,18 +142,24 @@
     <section id="about">
       <div class="container">
         <div class="about">
-          <img class="photo" src="assets/profile.png" alt="Portrait of Anthony Talaogon" loading="lazy" />
-          <div>
+          <div class="about-visual">
+            <img class="photo" src="assets/profile.png" alt="Portrait of Anthony Talaogon" loading="lazy" />
+            <div class="about-badge">
+              <span class="availability-dot" aria-hidden="true"></span>
+              Open to opportunities
+            </div>
+          </div>
+          <div class="about-content">
             <div class="eyebrow">About Me</div>
             <h2>Designer who codes, developer who cares.</h2>
-            <p style="color:var(--muted);margin-top:14px;">
+            <p class="about-intro">
               With 4+ years across product design and engineering, I bridge the gap between
               vision and reality. I care about the details that make software feel effortless.
             </p>
-            <ul>
-              <li><b>Based in</b> Legazpi City, Albay</li>
-              <li><b>Experience</b> 4+ years in product & web</li>
-              <li><b>Focus</b> Accessibility, performance, craft</li>
+            <ul class="about-facts">
+              <li><b>Based in</b><span>Legazpi City, Albay</span></li>
+              <li><b>Experience</b><span>4+ years in product &amp; web</span></li>
+              <li><b>Focus</b><span>Accessibility, performance, craft</span></li>
             </ul>
           </div>
         </div>

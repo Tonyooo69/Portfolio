@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E3A8A"/>
+      <stop offset=".52" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="184" y1="103" x2="778" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="blur" x="-100" y="-100" width="1160" height="740" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h960v540H0z"/>
+  <circle cx="148" cy="122" r="180" fill="#38BDF8" fill-opacity=".55" filter="url(#blur)"/>
+  <circle cx="850" cy="436" r="190" fill="#6366F1" fill-opacity=".55" filter="url(#blur)"/>
+  <rect x="124" y="55" width="712" height="430" rx="28" fill="#102A62" fill-opacity=".2" stroke="#fff" stroke-opacity=".18"/>
+  <text x="164" y="106" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">◉ SkyCast</text>
+  <rect x="474" y="75" width="255" height="46" rx="23" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".2"/>
+  <text x="498" y="104" fill="#fff" fill-opacity=".7" font-family="Arial,sans-serif" font-size="16">Search city...</text>
+  <circle cx="700" cy="98" r="16" fill="#fff" fill-opacity=".24"/>
+  <rect x="158" y="144" width="644" height="192" rx="22" fill="url(#glass)" stroke="#fff" stroke-opacity=".22"/>
+  <text x="190" y="192" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">Legazpi City</text>
+  <text x="190" y="220" fill="#fff" fill-opacity=".72" font-family="Arial,sans-serif" font-size="15">Monday, 10:30 AM</text>
+  <text x="198" y="298" fill="#FFE28A" font-family="Arial,sans-serif" font-size="74">☀</text>
+  <text x="292" y="286" fill="#fff" font-family="Arial,sans-serif" font-size="76" font-weight="700">29°</text>
+  <text x="298" y="316" fill="#fff" fill-opacity=".75" font-family="Arial,sans-serif" font-size="18">Partly cloudy</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <rect x="158" y="359" width="148" height="91" rx="16" fill="#fff" fill-opacity=".13"/>
+    <rect x="323" y="359" width="148" height="91" rx="16" fill="#fff" fill-opacity=".13"/>
+    <rect x="488" y="359" width="148" height="91" rx="16" fill="#fff" fill-opacity=".13"/>
+    <rect x="653" y="359" width="149" height="91" rx="16" fill="#fff" fill-opacity=".13"/>
+    <text x="232" y="389" fill="#fff" fill-opacity=".7" font-size="13">FEELS LIKE</text>
+    <text x="397" y="389" fill="#fff" fill-opacity=".7" font-size="13">HUMIDITY</text>
+    <text x="562" y="389" fill="#fff" fill-opacity=".7" font-size="13">WIND</text>
+    <text x="727" y="389" fill="#fff" fill-opacity=".7" font-size="13">PRESSURE</text>
+    <text x="232" y="426" fill="#fff" font-size="22" font-weight="700">32°</text>
+    <text x="397" y="426" fill="#fff" font-size="22" font-weight="700">72%</text>
+    <text x="562" y="426" fill="#fff" font-size="22" font-weight="700">12 km/h</text>
+    <text x="727" y="426" fill="#fff" font-size="22" font-weight="700">1012</text>
+  </g>
+</svg>
