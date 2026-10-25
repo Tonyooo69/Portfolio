@@ -37,13 +37,15 @@
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
-        <button class="theme-toggle" aria-label="Switch to light mode">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
-          </svg>
-        </button>
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Switch to light mode">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+            </svg>
+          </button>
+          <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -82,7 +84,7 @@
             <p>A weather dashboard with current conditions, location search, and a 5-day forecast.</p>
             <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
             <div class="card-actions">
-              <a href="https://ton-zsh.github.io/Ton/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit</a>
+              <a href="https://ton-zsh.github.io/Ton/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit <span class="contact-arrow" aria-hidden="true">↗</span></a>
               <a href="https://github.com/ton-zsh/Ton" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Source</a>
             </div>
           </article>
@@ -92,7 +94,7 @@
             <p>A simple message form where visitors can send me a note.</p>
             <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Formspree</span></div>
             <div class="card-actions">
-              <a href="https://tonyooo69.github.io/project/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit</a>
+              <a href="https://tonyooo69.github.io/project/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit <span class="contact-arrow" aria-hidden="true">↗</span></a>
               <a href="https://github.com/Tonyooo69/project" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Source</a>
             </div>
           </article>
@@ -159,9 +161,13 @@
     <section id="contact">
       <div class="container">
         <div class="contact">
+          <div class="eyebrow">Get in touch</div>
           <h2>Let's work together</h2>
           <p>Have a project in mind? I'm open to freelance and full-time opportunities.</p>
-          <a href="mailto:talaogonanthony07@gmail.com" class="btn btn-primary">talaogonanthony07@gmail.com</a>
+          <a href="mailto:talaogonanthony07@gmail.com" class="btn btn-primary">
+            <span>Send a message</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
     </section>
