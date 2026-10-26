@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="background" x1="45" y1="28" x2="920" y2="532" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10291D"/>
+      <stop offset="1" stop-color="#07140D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="190" y1="140" x2="780" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#A3E635"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h960v540H0z"/>
+  <circle cx="158" cy="105" r="150" fill="#34D399" fill-opacity=".12"/>
+  <circle cx="860" cy="430" r="190" fill="#A3E635" fill-opacity=".08"/>
+  <rect x="76" y="54" width="808" height="432" rx="24" fill="#0D1A12" stroke="#A3E635" stroke-opacity=".2"/>
+  <text x="112" y="105" fill="url(#accent)" font-family="Arial,sans-serif" font-size="27" font-weight="800" letter-spacing="2">PITOYSENPAI</text>
+  <rect x="665" y="73" width="180" height="42" rx="21" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".1"/>
+  <circle cx="690" cy="94" r="7" fill="#34D399"/>
+  <text x="708" y="100" fill="#E6F4EA" fill-opacity=".75" font-family="Arial,sans-serif" font-size="15">Search titles</text>
+  <text x="112" y="153" fill="#E6F4EA" font-family="Arial,sans-serif" font-size="17" font-weight="700">BROWSE BY GENRE</text>
+  <g font-family="Arial,sans-serif" font-size="13" text-anchor="middle">
+    <rect x="112" y="169" width="76" height="30" rx="15" fill="url(#accent)"/>
+    <text x="150" y="189" fill="#0D1A12" font-weight="700">All</text>
+    <rect x="197" y="169" width="99" height="30" rx="15" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".1"/>
+    <text x="246" y="189" fill="#E6F4EA" fill-opacity=".8">Action</text>
+    <rect x="305" y="169" width="113" height="30" rx="15" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".1"/>
+    <text x="361" y="189" fill="#E6F4EA" fill-opacity=".8">Adventure</text>
+    <rect x="427" y="169" width="99" height="30" rx="15" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".1"/>
+    <text x="476" y="189" fill="#E6F4EA" fill-opacity=".8">Romance</text>
+    <rect x="535" y="169" width="99" height="30" rx="15" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".1"/>
+    <text x="584" y="189" fill="#E6F4EA" fill-opacity=".8">Comedy</text>
+  </g>
+  <g>
+    <rect x="112" y="222" width="166" height="206" rx="13" fill="#173A29" stroke="#34D399" stroke-opacity=".24"/>
+    <rect x="124" y="234" width="142" height="148" rx="8" fill="#24543C"/>
+    <circle cx="195" cy="296" r="40" fill="#A3E635" fill-opacity=".16"/>
+    <path d="M166 336c7-26 19-39 29-39s22 13 29 39" stroke="#A3E635" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="195" cy="285" r="18" fill="#34D399" fill-opacity=".8"/>
+    <text x="124" y="408" fill="#E6F4EA" font-family="Arial,sans-serif" font-size="15" font-weight="700">Featured title</text>
+  </g>
+  <g>
+    <rect x="297" y="222" width="166" height="206" rx="13" fill="#173A29" stroke="#34D399" stroke-opacity=".16"/>
+    <rect x="309" y="234" width="142" height="148" rx="8" fill="#3C4931"/>
+    <circle cx="380" cy="296" r="42" fill="#34D399" fill-opacity=".15"/>
+    <path d="M350 338c7-27 20-40 30-40s23 13 30 40" stroke="#34D399" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="380" cy="285" r="18" fill="#A3E635" fill-opacity=".78"/>
+    <text x="309" y="408" fill="#E6F4EA" font-family="Arial,sans-serif" font-size="15" font-weight="700">Popular picks</text>
+  </g>
+  <g>
+    <rect x="482" y="222" width="166" height="206" rx="13" fill="#173A29" stroke="#34D399" stroke-opacity=".16"/>
+    <rect x="494" y="234" width="142" height="148" rx="8" fill="#214148"/>
+    <circle cx="565" cy="296" r="42" fill="#A3E635" fill-opacity=".13"/>
+    <path d="M535 338c7-27 20-40 30-40s23 13 30 40" stroke="#A3E635" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="565" cy="285" r="18" fill="#34D399" fill-opacity=".78"/>
+    <text x="494" y="408" fill="#E6F4EA" font-family="Arial,sans-serif" font-size="15" font-weight="700">New releases</text>
+  </g>
+  <g>
+    <rect x="667" y="222" width="166" height="206" rx="13" fill="#173A29" stroke="#34D399" stroke-opacity=".16"/>
+    <rect x="679" y="234" width="142" height="148" rx="8" fill="#463342"/>
+    <circle cx="750" cy="296" r="42" fill="#34D399" fill-opacity=".14"/>
+    <path d="M720 338c7-27 20-40 30-40s23 13 30 40" stroke="#34D399" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="750" cy="285" r="18" fill="#A3E635" fill-opacity=".76"/>
+    <text x="679" y="408" fill="#E6F4EA" font-family="Arial,sans-serif" font-size="15" font-weight="700">Browse titles</text>
+  </g>
+</svg>
