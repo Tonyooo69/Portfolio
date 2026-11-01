@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="background" x1="40" y1="30" x2="920" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#292045"/>
+      <stop offset="1" stop-color="#11101E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="160" y1="120" x2="790" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#F9A8D4"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h960v540H0z"/>
+  <circle cx="150" cy="112" r="152" fill="#C4B5FD" fill-opacity=".1"/>
+  <circle cx="850" cy="434" r="184" fill="#F9A8D4" fill-opacity=".08"/>
+  <rect x="76" y="54" width="808" height="432" rx="24" fill="#171526" stroke="#C4B5FD" stroke-opacity=".2"/>
+  <text x="112" y="105" fill="url(#accent)" font-family="Arial,sans-serif" font-size="27" font-weight="800" letter-spacing="2">PETRECORD</text>
+  <rect x="715" y="73" width="130" height="40" rx="20" fill="#C4B5FD" fill-opacity=".12" stroke="#C4B5FD" stroke-opacity=".3"/>
+  <circle cx="738" cy="93" r="6" fill="#C4B5FD"/>
+  <text x="752" y="99" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="14">My pets</text>
+  <text x="112" y="158" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="19" font-weight="700">PET PROFILES</text>
+  <g>
+    <rect x="112" y="180" width="225" height="242" rx="16" fill="#211D35" stroke="#C4B5FD" stroke-opacity=".24"/>
+    <rect x="128" y="196" width="193" height="145" rx="11" fill="#332A4B"/>
+    <circle cx="224" cy="260" r="48" fill="#F9A8D4" fill-opacity=".18"/>
+    <path d="M182 282c3-29 16-46 42-46s39 17 42 46c-11 13-25 20-42 20s-31-7-42-20Z" fill="#C4B5FD" fill-opacity=".82"/>
+    <path d="M190 244c-5-21 2-36 13-36 9 0 15 11 17 27m33 9c5-21-2-36-13-36-9 0-15 11-17 27" stroke="#F9A8D4" stroke-linecap="round" stroke-width="8"/>
+    <text x="132" y="373" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="17" font-weight="700">Buddy</text>
+    <text x="132" y="397" fill="#C5C0D6" font-family="Arial,sans-serif" font-size="13">Health records • View profile</text>
+  </g>
+  <g>
+    <rect x="367" y="180" width="225" height="242" rx="16" fill="#211D35" stroke="#C4B5FD" stroke-opacity=".16"/>
+    <rect x="383" y="196" width="193" height="145" rx="11" fill="#3C2A42"/>
+    <circle cx="479" cy="260" r="48" fill="#C4B5FD" fill-opacity=".16"/>
+    <path d="M437 281c4-26 19-40 42-40s38 14 42 40c-11 14-25 21-42 21s-31-7-42-21Z" fill="#F9A8D4" fill-opacity=".8"/>
+    <path d="M447 250c-6-21 0-35 11-35 9 0 16 11 19 27m25 8c6-21 0-35-11-35-9 0-16 11-19 27" stroke="#C4B5FD" stroke-linecap="round" stroke-width="8"/>
+    <text x="387" y="373" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="17" font-weight="700">Mochi</text>
+    <text x="387" y="397" fill="#C5C0D6" font-family="Arial,sans-serif" font-size="13">Health records • View profile</text>
+  </g>
+  <g>
+    <rect x="622" y="180" width="225" height="242" rx="16" fill="#211D35" stroke="#C4B5FD" stroke-opacity=".16"/>
+    <rect x="638" y="196" width="193" height="145" rx="11" fill="#263346"/>
+    <circle cx="734" cy="260" r="48" fill="#F9A8D4" fill-opacity=".14"/>
+    <path d="M692 282c4-27 19-42 42-42s38 15 42 42c-11 13-25 20-42 20s-31-7-42-20Z" fill="#C4B5FD" fill-opacity=".8"/>
+    <path d="M702 250c-6-20 0-34 11-34 9 0 16 10 19 26m25 8c6-20 0-34-11-34-9 0-16 10-19 26" stroke="#F9A8D4" stroke-linecap="round" stroke-width="8"/>
+    <text x="642" y="373" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="17" font-weight="700">Luna</text>
+    <text x="642" y="397" fill="#C5C0D6" font-family="Arial,sans-serif" font-size="13">Health records • View profile</text>
+  </g>
+</svg>
