@@ -510,6 +510,17 @@ h1 .grad {
   pointer-events: none;
 }
 
+.avatar::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 70% 0 -3%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 82%, rgb(var(--accent-rgb) / 0.8), rgb(var(--accent-2-rgb) / 0.48) 38%, transparent 74%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
 .avatar img {
   position: relative;
   z-index: 1;
@@ -522,7 +533,7 @@ h1 .grad {
   transform-origin: center center;
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 78%, rgb(0 0 0 / 0.9) 82%, rgb(0 0 0 / 0.62) 85%, rgb(0 0 0 / 0.25) 88%, transparent 91%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 78%, rgb(0 0 0 / 0.9) 82%, rgb(0 0 0 / 0.62) 85%, rgb(0 0 0 / 0.25) 88%, transparent 91%);
-  filter: brightness(1.12) drop-shadow(0 24px 24px rgb(0 0 0 / 0.35));
+  filter: brightness(1.12) drop-shadow(0 18px 22px rgb(0 0 0 / 0.24));
 }
 
 .hero .avatar img {
