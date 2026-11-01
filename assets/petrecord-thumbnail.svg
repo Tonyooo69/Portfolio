@@ -1,48 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" fill="none">
   <defs>
-    <linearGradient id="background" x1="40" y1="30" x2="920" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#292045"/>
-      <stop offset="1" stop-color="#11101E"/>
+    <linearGradient id="page" x1="72" y1="30" x2="906" y2="411" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#064B3A"/>
+      <stop offset="1" stop-color="#243B5C"/>
     </linearGradient>
-    <linearGradient id="accent" x1="160" y1="120" x2="790" y2="430" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C4B5FD"/>
-      <stop offset="1" stop-color="#F9A8D4"/>
+    <linearGradient id="brand" x1="66" y1="68" x2="483" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#078B64"/>
+      <stop offset="1" stop-color="#173C50"/>
     </linearGradient>
+    <linearGradient id="button" x1="540" y1="315" x2="886" y2="315" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#198566"/>
+      <stop offset="1" stop-color="#086249"/>
+    </linearGradient>
+    <clipPath id="panel">
+      <rect x="36" y="14" width="888" height="400" rx="26"/>
+    </clipPath>
   </defs>
-  <path fill="url(#background)" d="M0 0h960v540H0z"/>
-  <circle cx="150" cy="112" r="152" fill="#C4B5FD" fill-opacity=".1"/>
-  <circle cx="850" cy="434" r="184" fill="#F9A8D4" fill-opacity=".08"/>
-  <rect x="76" y="54" width="808" height="432" rx="24" fill="#171526" stroke="#C4B5FD" stroke-opacity=".2"/>
-  <text x="112" y="105" fill="url(#accent)" font-family="Arial,sans-serif" font-size="27" font-weight="800" letter-spacing="2">PETRECORD</text>
-  <rect x="715" y="73" width="130" height="40" rx="20" fill="#C4B5FD" fill-opacity=".12" stroke="#C4B5FD" stroke-opacity=".3"/>
-  <circle cx="738" cy="93" r="6" fill="#C4B5FD"/>
-  <text x="752" y="99" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="14">My pets</text>
-  <text x="112" y="158" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="19" font-weight="700">PET PROFILES</text>
-  <g>
-    <rect x="112" y="180" width="225" height="242" rx="16" fill="#211D35" stroke="#C4B5FD" stroke-opacity=".24"/>
-    <rect x="128" y="196" width="193" height="145" rx="11" fill="#332A4B"/>
-    <circle cx="224" cy="260" r="48" fill="#F9A8D4" fill-opacity=".18"/>
-    <path d="M182 282c3-29 16-46 42-46s39 17 42 46c-11 13-25 20-42 20s-31-7-42-20Z" fill="#C4B5FD" fill-opacity=".82"/>
-    <path d="M190 244c-5-21 2-36 13-36 9 0 15 11 17 27m33 9c5-21-2-36-13-36-9 0-15 11-17 27" stroke="#F9A8D4" stroke-linecap="round" stroke-width="8"/>
-    <text x="132" y="373" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="17" font-weight="700">Buddy</text>
-    <text x="132" y="397" fill="#C5C0D6" font-family="Arial,sans-serif" font-size="13">Health records • View profile</text>
+  <path fill="url(#page)" d="M0 0h960v420H0z"/>
+  <circle cx="87" cy="68" r="152" fill="#31C998" fill-opacity=".08"/>
+  <circle cx="892" cy="388" r="154" fill="#8EA9FF" fill-opacity=".1"/>
+  <g clip-path="url(#panel)">
+    <path fill="url(#brand)" d="M36 14h462v400H36z"/>
+    <path fill="#fff" d="M498 14h426v400H498z"/>
+    <circle cx="466" cy="40" r="99" fill="#5AD6A9" fill-opacity=".12"/>
+    <circle cx="103" cy="397" r="110" fill="#91A7FF" fill-opacity=".16"/>
+    <rect x="66" y="68" width="112" height="31" rx="15.5" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-opacity=".22"/>
+    <circle cx="86" cy="83.5" r="5" fill="#63E0B4"/>
+    <circle cx="81" cy="81" r="2" fill="#63E0B4"/>
+    <circle cx="91" cy="81" r="2" fill="#63E0B4"/>
+    <text x="100" y="88" fill="#F2FFF9" font-family="Arial,sans-serif" font-size="12" font-weight="700">PetRecord</text>
+    <rect x="386" y="59" width="42" height="42" rx="13" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-opacity=".2" transform="rotate(8 386 59)"/>
+    <path d="M400 76c-4-7-10-4-8 2l6 8a2 2 0 0 0 3 0l6-8c2-6-4-9-7-2Z" fill="#A9F2D4"/>
+    <rect x="439" y="68" width="42" height="42" rx="13" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-opacity=".2" transform="rotate(-8 439 68)"/>
+    <path d="M453 85c-4-7-10-4-8 2l6 8a2 2 0 0 0 3 0l6-8c2-6-4-9-7-2Z" fill="#E9B9FF"/>
+    <text x="66" y="146" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700">Keep every pet story in</text>
+    <text x="66" y="178" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700">one safe place.</text>
+    <text x="66" y="211" fill="#D0E8DE" font-family="Arial,sans-serif" font-size="13">Track health notes, feeding schedules, visit logs, and</text>
+    <text x="66" y="231" fill="#D0E8DE" font-family="Arial,sans-serif" font-size="13">special moments for every furry friend you love.</text>
+    <g font-family="Arial,sans-serif" font-size="12" fill="#EFFAF6">
+      <rect x="66" y="256" width="32" height="32" rx="10" fill="#fff" fill-opacity=".15" stroke="#fff" stroke-opacity=".18"/>
+      <path d="M75 272h4l2-5 4 10 2-5h3" stroke="#9AF0D1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <text x="108" y="276">Health and care tracking</text>
+      <rect x="66" y="296" width="32" height="32" rx="10" fill="#fff" fill-opacity=".15" stroke="#fff" stroke-opacity=".18"/>
+      <rect x="76" y="304" width="12" height="15" rx="2" stroke="#9AF0D1" stroke-width="1.5"/>
+      <path d="M79 308h6m-6 4h6m-6 4h4" stroke="#9AF0D1" stroke-linecap="round" stroke-width="1.2"/>
+      <text x="108" y="316">Vaccines and appointments</text>
+      <rect x="66" y="336" width="32" height="32" rx="10" fill="#fff" fill-opacity=".15" stroke="#fff" stroke-opacity=".18"/>
+      <path d="m82 343 1.4 4.1 4.1 1.4-4.1 1.4L82 354l-1.4-4.1-4.1-1.4 4.1-1.4L82 343Zm8 9 .9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9.9-2.1Z" fill="#9AF0D1"/>
+      <text x="108" y="356">Happy memories saved</text>
+    </g>
+    <g font-family="Arial,sans-serif">
+      <rect x="66" y="368" width="127" height="44" rx="12" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-opacity=".17"/>
+      <text x="78" y="387" fill="#fff" font-size="16" font-weight="700">2.4k+</text>
+      <text x="78" y="402" fill="#C5DAD2" font-size="10">happy pets</text>
+      <rect x="204" y="368" width="127" height="44" rx="12" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-opacity=".17"/>
+      <text x="216" y="387" fill="#fff" font-size="16" font-weight="700">96%</text>
+      <text x="216" y="402" fill="#C5DAD2" font-size="10">care retention</text>
+      <rect x="342" y="368" width="127" height="44" rx="12" fill="#fff" fill-opacity=".12" stroke="#fff" stroke-opacity=".17"/>
+      <text x="354" y="387" fill="#fff" font-size="16" font-weight="700">24/7</text>
+      <text x="354" y="402" fill="#C5DAD2" font-size="10">pet support</text>
+    </g>
+    <rect x="677" y="69" width="54" height="54" rx="15" fill="#E8F4F2"/>
+    <path d="M697 97c0-6 4-10 9-10s9 4 9 10v2h-18v-2Z" stroke="#267A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="706" cy="81" r="5" stroke="#267A66" stroke-width="2"/>
+    <rect x="709" y="93" width="12" height="10" rx="2" fill="#267A66"/>
+    <path d="M712 93v-2a3 3 0 0 1 6 0v2" stroke="#267A66" stroke-width="1.6"/>
+    <text x="710" y="157" fill="#17312A" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle">Welcome Back</text>
+    <text x="710" y="179" fill="#79847F" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">Login to your PetRecord account</text>
+    <text x="540" y="215" fill="#263832" font-family="Arial,sans-serif" font-size="11" font-weight="700">Username or Email</text>
+    <rect x="540" y="224" width="346" height="39" rx="10" fill="#fff" stroke="#D7DEDA"/>
+    <circle cx="558" cy="239" r="4" stroke="#A3ADA8"/>
+    <path d="M551 251c0-4 3-6 7-6s7 2 7 6" stroke="#A3ADA8" stroke-linecap="round"/>
+    <text x="574" y="249" fill="#A6AFAB" font-family="Arial,sans-serif" font-size="12">Enter username or email</text>
+    <text x="540" y="283" fill="#263832" font-family="Arial,sans-serif" font-size="11" font-weight="700">Password</text>
+    <rect x="540" y="292" width="346" height="39" rx="10" fill="#fff" stroke="#D7DEDA"/>
+    <rect x="554" y="305" width="10" height="11" rx="2" stroke="#97A39D"/>
+    <path d="M556 305v-3a3 3 0 0 1 6 0v3" stroke="#97A39D" stroke-linecap="round"/>
+    <text x="574" y="317" fill="#A6AFAB" font-family="Arial,sans-serif" font-size="12">Enter password</text>
+    <path d="M856 311c4-5 9-5 13 0-4 5-9 5-13 0Z" stroke="#97A39D" stroke-linejoin="round"/>
+    <circle cx="862.5" cy="311" r="1.7" fill="#97A39D"/>
+    <rect x="540" y="346" width="346" height="40" rx="10" fill="url(#button)"/>
+    <path d="M556 362h-4v8h4m-1-6 3 2-3 2m4-4v4" stroke="#E8FFF6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+    <text x="714" y="371" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">Login</text>
+    <text x="648" y="407" fill="#737D78" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Don't have an account?</text>
+    <text x="776" y="407" fill="#22745B" font-family="Arial,sans-serif" font-size="11" font-weight="700">Register here</text>
   </g>
-  <g>
-    <rect x="367" y="180" width="225" height="242" rx="16" fill="#211D35" stroke="#C4B5FD" stroke-opacity=".16"/>
-    <rect x="383" y="196" width="193" height="145" rx="11" fill="#3C2A42"/>
-    <circle cx="479" cy="260" r="48" fill="#C4B5FD" fill-opacity=".16"/>
-    <path d="M437 281c4-26 19-40 42-40s38 14 42 40c-11 14-25 21-42 21s-31-7-42-21Z" fill="#F9A8D4" fill-opacity=".8"/>
-    <path d="M447 250c-6-21 0-35 11-35 9 0 16 11 19 27m25 8c6-21 0-35-11-35-9 0-16 11-19 27" stroke="#C4B5FD" stroke-linecap="round" stroke-width="8"/>
-    <text x="387" y="373" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="17" font-weight="700">Mochi</text>
-    <text x="387" y="397" fill="#C5C0D6" font-family="Arial,sans-serif" font-size="13">Health records • View profile</text>
-  </g>
-  <g>
-    <rect x="622" y="180" width="225" height="242" rx="16" fill="#211D35" stroke="#C4B5FD" stroke-opacity=".16"/>
-    <rect x="638" y="196" width="193" height="145" rx="11" fill="#263346"/>
-    <circle cx="734" cy="260" r="48" fill="#F9A8D4" fill-opacity=".14"/>
-    <path d="M692 282c4-27 19-42 42-42s38 15 42 42c-11 13-25 20-42 20s-31-7-42-20Z" fill="#C4B5FD" fill-opacity=".8"/>
-    <path d="M702 250c-6-20 0-34 11-34 9 0 16 10 19 26m25 8c6-20 0-34-11-34-9 0-16 10-19 26" stroke="#F9A8D4" stroke-linecap="round" stroke-width="8"/>
-    <text x="642" y="373" fill="#F1EEFF" font-family="Arial,sans-serif" font-size="17" font-weight="700">Luna</text>
-    <text x="642" y="397" fill="#C5C0D6" font-family="Arial,sans-serif" font-size="13">Health records • View profile</text>
-  </g>
+  <rect x="36.5" y="14.5" width="887" height="399" rx="25.5" stroke="#fff" stroke-opacity=".25"/>
 </svg>
