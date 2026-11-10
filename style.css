@@ -321,7 +321,7 @@ nav {
   color: var(--accent);
   cursor: pointer;
   margin-left: 0;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 .theme-toggle svg {
@@ -334,9 +334,35 @@ nav {
   stroke-linejoin: round;
 }
 
+.theme-toggle.is-switching svg {
+  animation: themeIconSwitch 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes themeIconSwitch {
+  50% { transform: rotate(90deg) scale(0.65); opacity: 0.35; }
+  to { transform: rotate(180deg) scale(1); opacity: 1; }
+}
+
 .theme-toggle:hover {
   transform: translateY(-2px);
   border-color: rgb(var(--accent-rgb) / 0.5);
+}
+
+:root::view-transition-old(root) {
+  animation: none;
+}
+
+:root::view-transition-new(root) {
+  animation: themeReveal 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes themeReveal {
+  from {
+    clip-path: circle(0 at var(--theme-switch-x, 50%) var(--theme-switch-y, 50%));
+  }
+  to {
+    clip-path: circle(var(--theme-reveal-radius, 150vmax) at var(--theme-switch-x, 50%) var(--theme-switch-y, 50%));
+  }
 }
 
 .nav-links a:focus-visible,
@@ -1352,6 +1378,9 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .theme-toggle.is-switching svg,
+  :root::view-transition-new(root) { animation: none; }
+
   .contact-arrow { transition: none; }
   .about img,
   .about-facts li { transition: none; }

@@ -70,6 +70,35 @@ if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     const next =
       root.getAttribute("data-theme") === "light" ? "dark" : "light";
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    themeToggle.classList.remove("is-switching");
+    void themeToggle.offsetWidth;
+    themeToggle.classList.add("is-switching");
+    window.setTimeout(() => {
+      themeToggle.classList.remove("is-switching");
+    }, 500);
+
+    if (!reducedMotion && document.startViewTransition) {
+      const bounds = themeToggle.getBoundingClientRect();
+      const x = bounds.left + bounds.width / 2;
+      const y = bounds.top + bounds.height / 2;
+      const radius = Math.max(
+        Math.hypot(x, y),
+        Math.hypot(window.innerWidth - x, y),
+        Math.hypot(x, window.innerHeight - y),
+        Math.hypot(window.innerWidth - x, window.innerHeight - y)
+      );
+
+      root.style.setProperty("--theme-switch-x", `${x}px`);
+      root.style.setProperty("--theme-switch-y", `${y}px`);
+      root.style.setProperty("--theme-reveal-radius", `${radius}px`);
+      document.startViewTransition(() => setTheme(next));
+      return;
+    }
+
     setTheme(next);
   });
 }
